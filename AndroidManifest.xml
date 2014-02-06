@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cmu.master"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name=".control.MasterApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+
+        <!-- Welcome activities -->
+        <activity
+            android:name=".view.welcome.WelcomeActivity"
+            android:label="@string/text_welcome" 
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.welcome.MainPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- Course activities -->
+        <activity
+            android:name=".view.course.CourseDetailActivity"
+            android:label="@string/label_course_detail" >
+        </activity>
+
+        <!-- Semester activities -->
+        <activity
+            android:name=".view.semester.SemesterListActivity"
+            android:label="@string/label_semester_list"
+            android:launchMode="singleTop"
+            android:parentActivityName=".view.welcome.MainPageActivity" >
+        </activity>
+        <activity android:name=".view.semester.SelectedCourseActivity" >
+        </activity>
+
+        <!-- Department activities -->
+        <activity
+            android:name=".view.department.DepartmentListActivity"
+            android:label="@string/label_department_list"
+            android:parentActivityName=".view.semester.SemesterListActivity" >
+        </activity>
+        <activity android:name=".view.department.DepartmentCourseActivity" >
+        </activity>
+
+        <!-- Upload service -->
+        <service
+            android:name=".control.UpdateService"
+            android:exported="false" />
+    </application>
+
+</manifest>

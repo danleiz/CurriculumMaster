@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="horizontal" 
+    android:baselineAligned="false">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_course_description"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textview_course_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="#33CCCCCC"/>
+    
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_weight="1" >
+
+        <TextView android:id="@+id/label_course_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/text_course_department"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/textview_course_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_course_department"
+            android:layout_margin="10dp"            
+            android:paddingLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView android:id="@+id/label_course_instructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_course_department"
+            android:text="@string/text_course_instructor"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView
+            android:id="@+id/textview_course_instructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_course_instructor"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		
+		<TextView android:id="@+id/label_course_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_course_instructor"
+            android:text="@string/text_course_unit"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView
+            android:id="@+id/textview_course_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_course_unit"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		
+		<TextView android:id="@+id/label_course_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_course_unit"
+            android:text="@string/text_course_capacity"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView
+            android:id="@+id/textview_course_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_course_capacity"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		
+		<TextView android:id="@+id/label_course_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_course_capacity"
+            android:text="@string/text_course_url"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		<TextView
+            android:id="@+id/textview_course_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_course_url"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:autoLink="web"
+            android:paddingLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

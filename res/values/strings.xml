@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Application and activity labels -->
+    <string name="app_name">Curriculum Master</string>
+    <string name="label_login">Login</string>
+    <string name="label_course_detail">Course Detail</string>
+    <string name="label_semester_list">Registered Courses</string>
+    <string name="label_department_list">Course Catalog</string>
+    
+    <!-- Action bar and Contextual action bar -->
+    <string name="action_settings">Settings</string>
+    <string name="action_add_courses">Add Courses</string>
+    <string name="action_remove_course">Remove</string>
+    <string name="action_add_course">Add</string>    
+    <string name="action_register_course">Register</string>
+    <string name="action_already_registered">Registered Already</string>
+    
+    <string name="text_list_no_courses">No courses found</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_repeat_password">Repeat Password</string>
+    <string name="text_department">Department</string>
+    <string name="text_major">Major</string>
+    <string name="text_degree">Degree</string>
+    <string name="text_grade">Grade</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_login">Login</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="text_firstname">First Name</string>
+    <string name="text_lastname">Last Name</string>
+    <string name="text_enroll_year">Year Enrolled</string>
+    <string name="img_avatar">User Avatar</string>
+    
+    <!-- Course detail activity -->
+    <string name="text_course_description">Course Description</string>
+    <string name="text_course_department">Department</string>
+    <string name="text_course_instructor">Instructor</string>
+    <string name="text_course_unit">Unit</string>
+    <string name="text_course_capacity">Capacity</string>
+    <string name="text_course_url">URL</string>
+    <string name="text_course_no_url">(no website)</string>
+    <string name="btn_course_register">Register this course!</string>
+    <string name="btn_back">Back</string>
+            
+    <string name="text_main_basic">Basic:</string>
+    <string name="text_main_core">Core Course Requirement</string>
+    <string name="text_completion">Current completion of your curriculum: </string>
+    <string name="text_completion_num">%1$d out of %2$d </string>
+    
+    <string name="text_main_restricted">Restricted Electives</string>
+    <string name="text_main_option">Curriculum Option (%1$d units left)</string>
+    
+    <string-array name="text_department">
+        <item>Computer Science</item>
+        <item>Electrical and Computer Engineering</item>
+        <item>Heinz</item>
+        <item>Human-Computer Interaction</item>
+        <item>Information Networking Institute</item>
+        <item>Institute for Software Research</item>
+        <item>Language Technologies Institute</item>
+        <item>Machine Learning</item>
+    </string-array>
+    <string-array name="text_major">
+        <item>Computer Science</item>
+        <item>Information Networking</item>
+        <item>Information Security Technology and Management</item>
+    </string-array>
+    <string-array name="text_degree">
+        <item>Undergraduate</item>
+        <item>Graduate</item>
+        <item>PH.D</item>
+    </string-array>
+     <string-array name="text_semester">
+        <item>Fall</item>
+        <item>Spring</item>
+        <item>Summer</item>
+    </string-array>
+
+</resources>
